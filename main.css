@@ -250,7 +250,7 @@ a.nav-item:hover {
 }
 
 span.discription-text {
-  display: flex;
+  display: block;
   font-size: 25px;
   font-weight: 400;
   color: #000000;
@@ -269,6 +269,7 @@ a.about-button {
   margin-top: 64px;
   width: fit-content;
   transition: 0.3s;
+  white-space: nowrap;
 }
 
 a.about-button:hover {
@@ -277,7 +278,7 @@ a.about-button:hover {
 }
 
 .product-group {
-  margin: 60px 0 0 0;
+  margin: 0;
   width: 100%;
 }
 
@@ -342,6 +343,7 @@ a.linkbutton {
   border-radius: 21px;
   transition: 0.3s;
   width: fit-content;
+  white-space: nowrap;
 }
 
 a.linkbutton:hover {
@@ -356,6 +358,7 @@ a.linkbutton:hover {
   width: 100%;
   background: var(--heo-secondbg);
   margin-top: 80px;
+  align-items: center;
 }
 
 .footer .info {
@@ -399,6 +402,7 @@ a.linkbutton:hover {
   font-size: 32px;
   color: var(--heo-white);
   font-weight: bold;
+  text-align: center;
 }
 
 .discription-group {
@@ -412,10 +416,13 @@ a.linkbutton:hover {
 .product-banner span.description {
   font-size: 16px;
   color: var(--heo-white);
+  text-align: center;
 }
 
 .link-group {
   margin-bottom: 24px;
+  display: flex;
+  align-items: center;
 }
 
 a.primary-button {
@@ -424,6 +431,7 @@ a.primary-button {
   color: var(--heo-white);
   border-radius: 26px;
   transition: 0.3s;
+  white-space: nowrap;
 }
 
 a.primary-button:hover {
@@ -452,6 +460,11 @@ a.second-link:hover {
 .banner-pic-img {
   max-width: 968px;
   width: 90%;
+}
+
+.inline-word {
+  word-break: keep-all;
+  white-space: nowrap;
 }
 
 
@@ -515,6 +528,10 @@ a.second-link:hover {
   }
 
   .product-banner {
-    padding-top: 60px;
+    padding-top: 40px;
+  }
+
+  .banner-pic {
+    margin-top: 60px;
   }
 }
