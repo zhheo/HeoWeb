@@ -277,7 +277,7 @@ a.about-button:hover {
 }
 
 .product-group {
-  margin-top: 100px;
+  margin: 60px 0 0 0;
   width: 100%;
 }
 
@@ -386,6 +386,7 @@ a.linkbutton:hover {
   align-items: center;
   padding: 94px 0 0 0;
   height: fit-content;
+  margin: 50px 0;
 }
 
 .banner-info {
@@ -432,7 +433,7 @@ a.primary-button:hover {
 
 a.second-link {
   color: var(--heo-white);
-  opacity: 0.8;
+  opacity: 0.6;
   font-size: 14px;
   margin-left: 12px;
   transition: 0.3s;
