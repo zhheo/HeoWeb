@@ -219,9 +219,11 @@ img.site-logo-img {
 
 .banner-img {
   width: 405px;
+  height: 348px;
   max-width: 100%;
   animation: floating 4s ease-in-out infinite;
   pointer-events:none;
+  object-fit:cover;
 }
 
 span.site-name {
@@ -615,6 +617,10 @@ a.second-link:hover {
 
   a.linkbutton {
     margin-left: 0px;
+  }
+
+  .banner-img {
+    height: fit-content;
   }
 }
 
