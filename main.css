@@ -74,9 +74,9 @@
 }
 
 @keyframes floating {
-  0% { transform: translate(0,  0px); }
-  50%  { transform: translate(0, 15px); }
-  100%   { transform: translate(0, -0px); }   
+  0% { transform: translate(0,  -7px); }
+  50%  { transform: translate(0, 7px); }
+  100%   { transform: translate(0, -7px); }   
 }
 
 @keyframes showbanner {
@@ -224,6 +224,7 @@ img.site-logo-img {
   animation: floating 4s ease-in-out infinite;
   pointer-events:none;
   object-fit:cover;
+  transform: translate(0,  -7px);
 }
 
 span.site-name {
@@ -302,6 +303,12 @@ a.about-button:hover {
 
 h2.group-title {
   font-size: 32px;
+  margin-bottom: 0;
+}
+
+.group-description {
+  font-size: 14px;
+  color: var(--heo-secondtext);
 }
 
 .group-items {
@@ -433,7 +440,7 @@ a.linkbutton:hover {
   text-align: center;
 }
 
-.discription-group {
+.banner-discription-group {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -620,7 +627,7 @@ a.second-link:hover {
   }
 
   .banner-img {
-    height: fit-content;
+    height: 100%;
   }
 }
 

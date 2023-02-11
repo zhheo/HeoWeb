@@ -2,7 +2,10 @@
 var image = document.getElementsByClassName('banner-pic-img');
 new simpleParallax(image, {
   orientation: 'up',
-  scale: 1.3,
+  scale: 1.2,
+  delay: 2,
+  transition: 'cubic-bezier(0,0,0,1)',
+  maxTransition: 50,
   overflow: true
 });
 
