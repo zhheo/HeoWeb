@@ -1,6 +1,6 @@
 # HeoWeb
 
-![](/img/home.webp)
+![](/img/cover.webp)
 
 一个接近Apple风格的个人主页
 
