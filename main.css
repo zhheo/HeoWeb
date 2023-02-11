@@ -404,6 +404,10 @@ a.linkbutton:hover {
   opacity: 1;
 }
 
+.footer .info-group .info:not(:first-child) {
+  margin-left: 4px;
+}
+
 .footer-content {
   display: flex;
   flex-direction: column;
