@@ -66,3 +66,32 @@ var heoWeb = {
     requestAnimationFrame(animation);
   }
 }
+
+//滚动页面动画
+function scrollToTopWithAnimation() {
+  const duration = 600; // in milliseconds
+  const startPosition = window.pageYOffset;
+  const distance = -window.pageYOffset;
+  let startTime = null;
+
+  function animation(currentTime) {
+    if (!startTime) {
+      startTime = currentTime;
+    }
+    const timeElapsed = currentTime - startTime;
+    const scrollY = easeInOutQuad(timeElapsed, startPosition, distance, duration);
+    window.scrollTo(0, scrollY);
+    if (timeElapsed < duration) {
+      requestAnimationFrame(animation);
+    }
+  }
+
+  function easeInOutQuad(t, b, c, d) {
+    t /= d / 2;
+    if (t < 1) return c / 2 * t * t + b;
+    t--;
+    return -c / 2 * (t * (t - 2) - 1) + b;
+  }
+
+  requestAnimationFrame(animation);
+}
