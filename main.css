@@ -283,7 +283,7 @@ span.discription-text {
 
 a.about-button {
   display: flex;
-  padding: 12px 36px;
+  padding: 0 36px;
   background: var(--heo-card-btn-bg);
   color: var(--heo-white);
   border-radius: 29px;
@@ -292,6 +292,9 @@ a.about-button {
   width: fit-content;
   transition: ease-in-out 0.3s;
   white-space: nowrap;
+  align-items: center;
+  justify-content: center;
+  height: 48px;
 }
 
 a.about-button:hover {
@@ -518,6 +521,20 @@ a.second-link:hover {
 .inline-word {
   word-break: keep-all;
   white-space: nowrap;
+}
+
+.first-stack-links {
+  display: flex;
+}
+
+.about-button.social-button {
+  margin-left: 8px;
+  padding: 0 16px;
+}
+
+.about-button.social-button i {
+  font-size: 20px;
+  line-height: 1;
 }
 
 
