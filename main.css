@@ -460,6 +460,10 @@ a.linkbutton:hover {
   margin-top: 12px;
 }
 
+span.punctuation {
+  position: absolute;
+}
+
 .banner-discription-group {
   display: flex;
   flex-direction: column;
@@ -609,6 +613,7 @@ a.second-link:hover {
 
   .product-banner span.title {
     font-size: 40px;
+    line-height: 46px;
   }
 
   .menu-list {
