@@ -46,7 +46,7 @@
   --heo-green: #28a63f;
   --heo-yellow: #c28b00;
   --heo-yellow-op: #d99c001a;
-  --heo-orange: #e38100;
+  --heo-orange: #ffc635;
   --heo-fontcolor: #000000;
   --heo-background: #F5F5F7;
   --heo-navbg: #333333;
@@ -437,7 +437,7 @@ a.linkbutton:hover {
   align-items: center;
   padding: 94px 0 0 0;
   height: fit-content;
-  margin: 50px 0;
+  margin: 40px 0;
 }
 
 .banner-info {
@@ -447,7 +447,7 @@ a.linkbutton:hover {
 }
 
 .product-banner .tips {
-  color: var(--heo-orange);
+  color: var(--heo-vip);
   font-size: 14px;
 }
 
@@ -456,6 +456,8 @@ a.linkbutton:hover {
   color: var(--heo-white);
   font-weight: bold;
   text-align: center;
+  line-height: 60px;
+  margin-top: 12px;
 }
 
 .banner-discription-group {
