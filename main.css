@@ -40,7 +40,7 @@
   --heo-theme-op: #4375ff23;
   --heo-theme-op-deep: #4375ffdd;
   --heo-theme-none: #4375ff01;
-  --heo-blue: #425AEF;
+  --heo-blue: #3478f5;
   --heo-red: #D8213C;
   --heo-pink: #FF7C7C;
   --heo-green: #28a63f;
@@ -141,10 +141,10 @@ sup {
   color: var(--heo-white);
   padding: 4px;
   border-radius: 4px;
-  margin-left: 4px;
+  margin-left: 6px;
   white-space: nowrap;
   position: absolute;
-  top: -2px;
+  top: -4px;
 }
 
 sup.hot {
@@ -201,6 +201,10 @@ img {
   transition: ease-in-out 0.3s;
   animation: showbannertext 4s ease-in-out;
   color: var(--heo-fontcolor);
+}
+
+.nav-banner a:hover {
+  color: var(--heo-main);
 }
 
 .nav-right .nav-menu {
@@ -332,14 +336,26 @@ h2.group-title {
 }
 
 a.group-item-icon {
-  width: 122px;
-  height: 122px;
+  width: 100px;
+  height: 100px;
 }
 
 img.group-item-icon-img {
-  width: 122px;
-  height: 122px;
+  width: 100px;
+  height: 100px;
   border-radius: 28px;
+}
+
+.group-info-button {
+  display: flex;
+  align-items: center;
+}
+
+span.linkbotton-tips {
+  display: flex;
+  margin-left: 10px;
+  font-size: 12px;
+  color: var(--heo-secondtext);
 }
 
 .group-info {
@@ -352,16 +368,17 @@ img.group-item-icon-img {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 122px;
+  height: 100px;
 }
 
 .group-info-group a.title {
   color: var(--heo-fontcolor);
-  font-size: 24px;
+  font-size: 20px;
   line-height: 1;
   margin-bottom: 8px;
   width: fit-content;
   position: relative;
+  font-weight: bold;
 }
 
 .group-info-group a.discription {
@@ -373,17 +390,16 @@ img.group-item-icon-img {
   text-overflow: ellipsis;
   display: -webkit-box;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2; /* 这里是超出几行省略 */
+  -webkit-line-clamp: 1; /* 这里是超出几行省略 */
   overflow: hidden;
 }
 
 a.linkbutton {
-  padding: 8px 24px;
+  padding: 6px 20px;
   display: flex;
-  background: var(--heo-card-btn-bg);
+  background: var(--heo-blue);
   color: var(--heo-white);
-  font-size: 16px;
-  box-shadow: 0px 12px 12px -9px rgba(0,0,0,0.29);
+  font-size: 14px;
   border-radius: 21px;
   transition: ease-in-out 0.3s;
   width: fit-content;
@@ -391,8 +407,11 @@ a.linkbutton {
 }
 
 a.linkbutton:hover {
-  background: var(--heo-main);
-  box-shadow: 0px 12px 12px -9px rgba(5, 51, 137, 0.29);
+  filter: brightness(1.2);
+}
+
+a.linkbutton:active {
+  filter: brightness(0.8);
 }
 
 .footer {
@@ -486,16 +505,16 @@ span.punctuation {
 
 a.primary-button {
   padding: 8px 26px;
-  background: var(--heo-theme);
-  color: var(--heo-white);
+  background: var(--heo-white);
+  color: var(--heo-fontcolor);
   border-radius: 26px;
   transition: ease-in-out 0.3s;
   white-space: nowrap;
 }
 
 a.primary-button:hover {
-  background: var(--heo-white);
-  color: var(--heo-fontcolor);
+  background: var(--heo-black);
+  color: var(--heo-white);
 }
 
 a.second-link {
