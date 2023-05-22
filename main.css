@@ -457,6 +457,9 @@ a.linkbutton:active {
   padding: 94px 0 0 0;
   height: fit-content;
   margin: 40px 0;
+  overflow: hidden;
+  position: relative;
+  min-height: 800px;
 }
 
 .banner-info {
@@ -534,12 +537,13 @@ a.second-link:hover {
   display: flex;
   justify-content: center;
   height: 400px;
-  overflow: hidden;
+  position: absolute;
+  bottom: 100px;
 }
 
 .banner-pic-img {
   max-width: 968px;
-  width: 90%;
+  width: 100%;
   margin: auto;
 }
 
@@ -562,11 +566,72 @@ a.second-link:hover {
   line-height: 1;
 }
 
+.special-card {
+  background: var(--heo-white);
+  width: 90%;
+  border-radius: 30px;
+  max-width: 1200px;
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  height: 500px;
+}
+
+.special-card-left {
+  padding: 54px 0 54px 75px;
+  z-index: 1;
+  width: 100%;
+  position: relative;
+}
+
+.special-card-left .tips {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.special-card-left .title {
+  font-size: 40px;
+  font-weight: bold;
+  max-width: 400px;
+  line-height: 1.2;
+  margin-top: 8px;
+  max-width: calc(100% - 700px);
+}
+
+.special-card-left .discription {
+  font-size: 16px;
+  margin-top: 24px;
+  opacity: 0.8;
+  line-height: 1.2;
+  max-width: calc(100% - 700px);
+}
+
+.special-card-left .button-group {
+  position: absolute;
+  bottom: 56px;
+  display: flex;
+  align-items: center;
+}
+
+.special-card-right {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  display: flex;
+  z-index: 0;
+}
+
 
 @media screen and (max-width: 1200px) {
   .group-item {
     width: 50%;
   }
+
+  .special-card {
+    display: none;
+  }
+
 }
 
 @media screen and (max-width: 768px) {
@@ -609,7 +674,7 @@ a.second-link:hover {
   }
 
   .footer .info {
-    margin-bottom: 16px;
+    margin-bottom: 12px;
   }
 
   .show-menu .nav {
@@ -670,10 +735,12 @@ a.second-link:hover {
   .banner-pic {
     margin-top: 20px;
     height: 200px;
+    bottom: 40px;
   }
 
   .product-banner {
     padding-top: 60px;
+    min-height: 520px;
   }
 
   h2.group-title {
@@ -686,6 +753,10 @@ a.second-link:hover {
 
   .banner-img {
     height: 100%;
+  }
+
+  .banner-pic-img {
+    width: 100vw;
   }
 }
 
@@ -718,6 +789,11 @@ a.second-link:hover {
 
   .group-info-button {
     margin-top: 0px;
+    flex-direction: column;
+  }
+
+  span.linkbotton-tips {
+    margin-top: 4px;
   }
 
   .product-group {
@@ -735,7 +811,7 @@ a.second-link:hover {
   }
 
   .banner-pic {
-    margin-top: 20px;
+    margin-top: 0px;
     height: 150px;
   }
 
@@ -749,5 +825,19 @@ a.second-link:hover {
 
   .footer {
     margin-top: 20px;
+  }
+
+  .title-group .title {
+    font-size: 35px;
+    line-height: 1.2;
+  }
+
+  span.discription-text {
+    font-size: 16px;
+    line-height: 1.2;
+  }
+
+  a.about-button {
+    padding: 0 24px;
   }
 }
