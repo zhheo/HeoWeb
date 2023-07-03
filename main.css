@@ -638,13 +638,14 @@ a.second-link:hover {
   flex-direction: column;
   align-content: center;
   padding: 24px 32px;
-  background: var(--heo-secondbg);
+  background: var(--heo-white);
   margin: 0 5%;
   border-radius: 12px;
   line-height: 1.5;
   max-width: 1200px;
   margin-top: 18px;
   border: var(--style-border-always);
+  box-shadow: var(--heo-shadow-border);
 }
 
 .avatar-discription-text {
