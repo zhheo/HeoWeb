@@ -18,4 +18,6 @@
 
 <img width="200" height="100" alt="34fe3a45-492d-4ea4-ae5d-ea1087ca7b4b" src="https://github.com/user-attachments/assets/6efd253e-fd4b-4d4c-a56f-1e5b5dcee15b" />
 
-[![使用 EdgeOne Pages 部署](https://cdnstatic.tencentcs.com/edgeone/pages/deploy.svg)](https://edgeone.ai/pages/new?repository-url=https%3A%2F%2Fgithub.com%2Fzhheo%2FHeoWeb)
+![使用 EdgeOne Pages 部署](https://cdnstatic.tencentcs.com/edgeone/pages/deploy.svg)
+
+[](https://edgeone.ai/pages/new?repository-url=https%3A%2F%2Fgithub.com%2Fzhheo%2FHeoWeb)
